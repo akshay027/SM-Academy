@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "252367616831",
+    "firebase_url": "https://sm-academy.firebaseio.com",
+    "project_id": "sm-academy",
+    "storage_bucket": "sm-academy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252367616831:android:f48ab8d256ad9ced",
+        "android_client_info": {
+          "package_name": "com.sm_academy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "252367616831-iqcrmeq1buedlpvim0kiv7ram673j1sg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sm_academy",
+            "certificate_hash": "e6f0cd3173c91bcd0e58a91ac58d82b955ef1b33"
+          }
+        },
+        {
+          "client_id": "252367616831-sjsn1hc5sn3rbnmkn5bdq27akp5p5102.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeOzz1c-H5UKuHO_TmmaZ2X4kyR_zdMnU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "252367616831-sjsn1hc5sn3rbnmkn5bdq27akp5p5102.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

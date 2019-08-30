@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/light_gray">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeToRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="40dp"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/descriptionMainView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/border_shadow"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/batchName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Description"
+                            android:textColor="#000"
+                            android:textSize="16sp" />
+
+                        <com.borjabravo.readmoretextview.ReadMoreTextView
+                            android:id="@+id/aboutCourseView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/coursefieldView"
+                            android:maxLines="4"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            app:colorClickableText="@color/commoncolor" />
+
+                        <!--   <com.borjabravo.readmoretextview.ReadMoreTextView
+                               android:id="@+id/aboutCourseView"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:background="#ffffff"
+                               android:maxLines="5"
+                               android:padding="15dp"
+                               android:textColor="#000000"
+                               android:textSize="13sp" />
+           -->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#7a7a7a" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="right"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/plus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/aboutCourseView"
+                                android:layout_gravity="bottom|left"
+                                android:clickable="true"
+                                android:gravity="bottom"
+                                android:text="Show More"
+                                android:textColor="@color/commoncolor"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/minus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/aboutCourseView"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="bottom|left"
+                                android:clickable="true"
+                                android:gravity="bottom"
+                                android:text="Show Less"
+                                android:textColor="@color/commoncolor"
+                                android:textSize="14sp"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+                <!--    <TextView
+                        android:id="@+id/aboutCourseView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/coursefieldView"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/border_shadow"
+                        android:ellipsize="end"
+                        android:maxLines="20"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textSize="14sp" />-->
+
+                <ListView
+                    android:id="@+id/coursefieldView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/btnView"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="0.5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"></ListView>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/btnView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center|bottom">
+
+                <Button
+                    android:id="@+id/btnMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bookexam"
+                    android:elevation="10dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:weightSum="2">
+
+                    <Button
+                        android:id="@+id/btnOne"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttonshape"
+                        android:elevation="10dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btnTwo"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_margin="5dp"
+                        android:layout_toRightOf="@+id/btnOne"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttonshape"
+                        android:elevation="10dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentBottom="true"
+                 android:layout_gravity="bottom|right"
+                 android:gravity="center">
+
+                 <TextView
+                     android:id="@+id/btnOne"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="bottom"
+                     android:layout_margin="5dp"
+                     android:layout_weight="1"
+                     android:background="@drawable/buttonshape"
+                     android:gravity="bottom|center"
+                     android:textAppearance="?android:attr/textAppearanceSmall"
+                     android:textColor="@color/white" />
+
+                 <TextView
+                     android:id="@+id/btnTwo"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="bottom|right"
+                     android:layout_margin="5dp"
+                     android:layout_weight="1"
+                     android:background="@drawable/buttonshape"
+                     android:gravity="bottom|center"
+                     android:textAppearance="?android:attr/textAppearanceSmall"
+                     android:textColor="@color/white" />
+
+             </RelativeLayout>-->
+        </RelativeLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>
+
+

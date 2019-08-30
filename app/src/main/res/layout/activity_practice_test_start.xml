@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    tools:context=".Activity.LearnerActivity.PracticeTestStartActivity">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/headingView"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:textColor="@color/commoncolor"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/linkView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="bottom"
+            android:layout_margin="5dp"
+            android:gravity="center|left"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/prevBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/blue_button_shape"
+                android:text="Previous"
+                android:textAllCaps="false"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/startBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/blue_button_shape"
+                android:text="Start"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/submitBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/blue_button_shape"
+                android:gravity="center"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/header"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/myLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:fillViewport="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/resultview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center|top"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <WebView
+                    android:id="@+id/descriptionView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/linkView"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    tools:ignore="WebViewLayout" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <!-- <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_gravity="center"
+         android:gravity="center">
+
+         <ScrollView
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+             <LinearLayout
+
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:background="@color/white"
+                 android:orientation="vertical">
+
+                 <TextView
+                     android:id="@+id/descriptionView"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_above="@+id/linkView"
+                     android:layout_margin="5dp"
+                     android:textSize="16sp" />
+
+             </LinearLayout>
+         </ScrollView>
+
+         &lt;!&ndash;          <android.support.v7.widget.RecyclerView
+                       android:id="@+id/optionsecondView"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_above="@+id/linkView"
+                       android:layout_margin="5dp"
+                       android:cacheColorHint="#ffffffff"
+                       android:columnWidth="90dp"
+                       android:gravity="center"
+                       android:horizontalSpacing="10dp"
+                       android:numColumns="2"
+                       android:stretchMode="columnWidth"
+                       android:verticalSpacing="10dp"
+                       android:visibility="gone"></android.support.v7.widget.RecyclerView>
+       &ndash;&gt;
+
+     </RelativeLayout>-->
+</RelativeLayout>

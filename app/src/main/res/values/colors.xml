@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008647</color>
+    <color name="colordark">#1241cf</color>
+    <color name="commoncolor">#FF8008</color>
+    <color name="circle">#6ed3cf</color>
+    <!--7f7cb9-->
+    <color name="lightcolorPrimary">#6287d7</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF9900</color>
+
+    <color name="textBlackDark">#4c4c4c</color>
+    <color name="textBlackLight">#999999</color>
+    <color name="transparent">#00000000</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="black">#EB363535</color>
+    <color name="darkblack">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="purpleblue">#F86449C6</color>
+    <color name="red">#fc4b6c</color>
+    <color name="green">#28a745</color>
+    <color name="burgandy">#710202</color>
+    <color name="orange">#f57722</color>
+    <color name="gray_dark">#0b0b0b</color>
+    <color name="gray_light">#4dcbac</color>
+    <color name="background">#fb0090ff</color>
+
+    <color name="darkback">#4c5968</color>
+    <color name="darkactionback">#566475</color>
+    <color name="red_dark">#FF7B0202</color>
+    <color name="green_dark">#FF015401</color>
+    <color name="skyBlue">#0492ac</color>
+    <color name="skyBluelight">#5ae5ff</color>
+    <color name="holiday">#008080</color>
+    <color name="halfday">#d3ffce</color>
+    <color name="weekend">#000</color>
+    <color name="trans">#80000000</color>.
+    <color name="sender">#b25800</color>
+    <color name="receiver">#000000</color>
+
+    <color name="leave">#ff84d8</color>
+    <color name="chat_1">#ffa500</color>
+    <color name="chat_2">#088da5</color>
+    <color name="chat_3">#003366</color>
+    <color name="chat_4">#ab2100</color>
+    <color name="chat_5">#20b2aa</color>
+    <color name="chat_6">#6662B7</color>
+
+    <color name="present_am">#2a832a</color>
+    <color name="present_pm">#78d278</color>
+    <color name="attendancecolor">#FBCEB1</color>
+    <color name="actionbar_color">#00c0b0</color>
+
+    <color name="light_gray">#f5f5f5</color>
+    <color name="text_gray">#6b767d</color>
+    <color name="coral_blue">#1daefa</color>
+    <color name="dark_blue">#125D9D</color>
+
+    <color name="present">#00695C</color>
+    <color name="absent">#F4511E</color>
+
+    <color name="sub1">#3bafda</color>
+    <color name="sub2">#ff5454</color>
+    <color name="sub3">#54be54</color>
+    <color name="sub4">#f6bb42</color>
+    <color name="sub5">#facccc</color>
+    <color name="sub6">#bdbdbd</color>
+    <color name="sub7">#ff84d8</color>
+    <color name="sub8">#ffa500</color>
+    <color name="sub9">#088da5</color>
+    <color name="sub10">#003366</color>
+    <color name="sub11">#ab2100</color>
+    <color name="sub12">#20b2aa</color>
+    <color name="sub13">#6662B7</color>
+    <color name="sub14">#37bc9b</color>
+    <color name="sub15">#6B767D</color>
+
+    <color name="listen">#f0582f</color>
+    <color name="read">#1e88e5</color>
+    <color name="speak">#fc4b6c</color>
+    <color name="write">#ffb22b</color>
+    <color name="spaekandwrite">#d254cc</color>
+
+    <color name="assignmet">#B4098F8B</color>
+    <color name="mocktest">#53e6a7</color>
+    <color name="progress">#8ea54f</color>
+
+    <color name="first">#fd2c2c</color>
+    <color name="second">#fd832c</color>
+    <color name="third">#bfdc1c</color>
+    <color name="fourth">#34b12b</color>
+
+    <color name="paymentsuccess">#509e27</color>
+    <color name="paymentpending">#bed51f</color>
+    <color name="paymentfailed">#d51f1f</color>
+
+    //belowtwonine
+</resources>

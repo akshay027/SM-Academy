@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sm_academy">
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.exalogic.inmegh.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.STORAGE" />
+
+    <application
+        android:name=".Activity.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activity.LearnerActivity.StudyMaterialsPhaseViewActivity"
+            android:label="Study Material Phases"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Activity.LearnerActivity.SubscriptionPaymentActivity"
+            android:label="Payment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LearnerActivity.MockTestScoreActivity"
+            android:label="Mock Test Score"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LearnerActivity.MockTestScoreAnswerActivity"
+            android:label="Mock Test Answer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LearnerActivity.MockTestCountActivity"
+            android:label="Mock Test"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LearnerActivity.AssignmentMockProgressActivity"
+            android:label="Progress Chart"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LearnerActivity.MockActiveTestActivity"
+            android:label="Mock Test"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LearnerActivity.MockTestStartActivity"
+            android:label="Mock Test Description"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LearnerActivity.MockTestListActivity"
+            android:label="Mock Test"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LearnerActivity.CourseSummariesActivity"
+            android:label="Course Summaries"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LearnerActivity.AssignmentTestCountActivity"
+            android:label="Assignment Test"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LearnerActivity.PracticeTestCountActivity"
+            android:label="Practice Test"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LearnerActivity.PracticeActiveTestActivity"
+            android:label="Practice Test"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LearnerActivity.PracticeTestStartActivity"
+            android:label="Description"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LearnerActivity.PracticeTestViewListActivity"
+            android:label="Practice Tests Topics"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LearnerActivity.AssignmentActiveTestActivity"
+            android:label="Assignment Test"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LearnerActivity.AssignmentTestStartActivity"
+            android:label="Description"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LearnerActivity.AssignmentViewListActivity"
+            android:label="Assignment Tests Topics"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.DefaultActivity.AboutCourseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.DefaultActivity.BatchDetailsTabActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LearnerActivity.ProfileViewActivity"
+            android:label="Profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LearnerActivity.PaymentHistoriesActivity"
+            android:label="Purchase History"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LearnerActivity.MySubscriptionActivity"
+            android:label="My Subscription"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activity.LearnerActivity.ProfileImageviewActivity" />
+        <activity
+            android:name=".Activity.LearnerActivity.AudioPlayer"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Audio Player" />
+        <activity
+            android:name=".Activity.DefaultActivity.SplashScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".fcm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".fcm.MyFirebaseInstanceIDService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".Activity.LearnerActivity.VideoPlayerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Video Player" />
+        <activity
+            android:name=".Activity.LearnerActivity.StudyMaterialViewActivity"
+            android:label="Study Materials"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LearnerActivity.StudyMaterialsSectionTopicActivity"
+            android:label="Section Topics"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.DefaultActivity.PteTestResultActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.DefaultActivity.PteTestStartActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.DefaultActivity.ProficiencyTestActivity"
+            android:label="Proficiency test"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LearnerActivity.LiveSessionsActivity"
+            android:label="Live Sessions"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.LearnerActivity.CourseWithSyllabusViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.DefaultActivity.InternetConnectionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.DefaultActivity.UpdatePopupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.DefaultActivity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.DefaultActivity.OTPActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.LearnerActivity.LearnerDashBoardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.DefaultActivity.SignUpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.LearnerActivity.ReadingComponentActivity"
+            android:label="Reading "
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.DefaultActivity.MainLandingActivity"
+            android:label="Courses"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.DefaultActivity.AdditionalDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--
+    <activity
+                android:name=".Activity.DefaultActivity.BatchActivity"
+                android:label="Batch Details"
+                android:screenOrientation="portrait" />
+        -->
+        <activity
+            android:name=".Activity.DefaultActivity.BatchTimingActivity"
+            android:label="Batch Timings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.DefaultActivity.CalenderEventActivity"
+            android:label="Events"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.DefaultActivity.PaymentActivity"
+            android:label="Payment"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

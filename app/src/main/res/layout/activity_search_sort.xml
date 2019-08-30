@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="5dp"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/border_shadow"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@color/light_gray"
+            android:text="Filter"
+            android:layout_margin="5dp"
+            android:textColor="@color/commoncolor"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+      <!--  <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_margin="5dp"
+            android:background="#7a7a7a" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:gravity="center|left"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/audioCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Audio " />
+
+            <CheckBox
+                android:id="@+id/videoCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Video " />
+
+            <CheckBox
+                android:id="@+id/docCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doc    " />
+
+            <CheckBox
+                android:id="@+id/imageCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Image" />
+
+            <CheckBox
+                android:id="@+id/allCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All    " />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

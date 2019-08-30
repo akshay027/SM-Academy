@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/changeRole"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="" />
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="" />
+        <item
+            android:id="@+id/schoolInfo"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="" />
+        <item
+            android:id="@+id/ownat"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="" />
+        <item
+            android:id="@+id/attendance"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="" />
+
+    </group>
+</menu>

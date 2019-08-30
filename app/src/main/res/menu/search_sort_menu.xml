@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menusearch"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_filter_list_black_24dp"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="always">
+
+        <!--<menu>
+
+            <item
+                android:id="@+id/video"
+                android:title="Video"
+                app:showAsAction="always" />
+
+            <item
+                android:id="@+id/audio"
+                android:title="Audio"
+                app:showAsAction="always" />
+            <item
+                android:id="@+id/pdf"
+                android:title="Pdf"
+                app:showAsAction="always" />
+
+            <item
+                android:id="@+id/doc"
+                android:title="Doc"
+                app:showAsAction="always" />
+
+            <item
+                android:id="@+id/image"
+                android:title="Image"
+                app:showAsAction="always" />
+            <item
+                android:id="@+id/all"
+                android:title="All"
+                app:showAsAction="always" />
+        </menu>-->
+    </item>
+    <!--    <item
+            android:id="@+id/dashboard"
+            android:orderInCategory="100"
+            android:title="Dashboard"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/profile"
+            android:orderInCategory="100"
+            android:title="Profile"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_logout_circle_black_24dp"
+            android:orderInCategory="100"
+            android:title="Logout"
+            app:showAsAction="never" />-->
+</menu>

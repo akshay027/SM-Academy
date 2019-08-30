@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/readingView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:background="@drawable/halfcircle2"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/fullView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+
+            android:gravity="center">
+
+
+            <TextView
+                android:id="@+id/courseName"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="12dp"
+                android:src="@drawable/books"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
